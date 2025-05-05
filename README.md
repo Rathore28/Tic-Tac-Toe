@@ -33,7 +33,7 @@ root.title("Tic-Tac-Toe")
 buttons = []
 for i in range(9):
     button = tk.Button(root, text="", font=("normal", 25), width=6, height=2,
-                       command=lambda i=i: button_click(i))  # ✅ correct index
+                       command=lambda i=i: button_click(i)) 
     button.grid(row=i//3, column=i%3)
     buttons.append(button)
 
